@@ -42,6 +42,7 @@ export default class Login extends Component {
         this.props.dispatch(fetchLogin(values, (res) => {
           message.success(res.message)
           sessionStorage.setItem('username', values.username)
+          sessionStorage.setItem('token', 'km')
           // this.props.dispatch(userInfo(values, (response) => {
           //   // sessionStorage.setItem('token', response.data.token)
           //   hashHistory.push('/')
@@ -55,7 +56,7 @@ export default class Login extends Component {
             loading: false,
           })
         }))
-        sessionStorage.setItem('token', 'km')
+
         hashHistory.push('/')
       }
     })

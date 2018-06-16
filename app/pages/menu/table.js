@@ -30,7 +30,7 @@ export default class app extends Component {
   }
 
   componentDidMount() {
-    this.props.dispatch(fetchHouseCheckList({ currentPage: 1 }, (respose) => {}))
+    this.props.dispatch(fetchHouseCheckList((respose) => {}))
   }
 
 

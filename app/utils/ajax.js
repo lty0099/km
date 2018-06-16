@@ -21,9 +21,9 @@ const axiosBaseConfig = {
   transformRequest: [(data, headers) => {
     // 加入token？
     const token = sessionStorage.getItem('token')
-    if (token) {
-      data.token = token
-    }
+    // if (token) {
+    //   data.token = token
+    // }
     // 请求对象转换成jon字符串
     if (typeof data === 'object') {
       return qs.stringify(data)

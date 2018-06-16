@@ -68,6 +68,7 @@ export default class LeftNav extends Component {
   }
 
   _handleClick = (e) => {
+    // console.log(e)
     this.setState({
       current: e.key,
       // openKeys: e.keyPath.slice(1),

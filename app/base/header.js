@@ -54,10 +54,6 @@ export default class Header extends Component {
     const { staff } = this.state
     const menu = (
       <Menu className="nav-dropmenu">
-        <Menu.Item key="0">
-          <span className="label">所属单位</span><span>{staff.usertable.gxdwqc}</span>
-        </Menu.Item>
-        <Menu.Divider />
         <Menu.Item key="1">
           <span className="label">用户姓名</span><span>{staff.usertable.username}</span>
         </Menu.Item>

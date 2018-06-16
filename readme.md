@@ -11,7 +11,7 @@ react@16.0 + redux@3.7.2 + react-router@3.2.0 + webpack@3.10.0 + fetch@2.0.3 + l
 #### 注意：由于涉及大量的 ES6/7 等新属性，nodejs 必须是 6.0 以上版本 ，建议使用 node 最新LTS版
 
 ```
-git clone https://github.com/lty0099/km.git  
+git clone https://github.com/lty0099/km 
 
 cd react （进入当前的项目）
 

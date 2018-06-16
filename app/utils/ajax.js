@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-fetch'
 import axios from 'axios'
+import qs from 'qs'
 import { prefix, timeout } from '../config'
 
 // axios配置
@@ -25,7 +26,7 @@ const axiosBaseConfig = {
     }
     // 请求对象转换成jon字符串
     if (typeof data === 'object') {
-      return JSON.stringify(data)
+      return qs.stringify(data)
     }
     return data
   }],
